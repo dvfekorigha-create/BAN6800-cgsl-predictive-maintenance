@@ -1,0 +1,9 @@
+# BAN6800 Module 2 — CGSL Predictive Maintenance Proof of Concept
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+matplotlib>=3.9
+jupyter>=1.0
+mlflow>=2.0
+openpyxl>=3.1
+ucimlrepo>=0.0.7
