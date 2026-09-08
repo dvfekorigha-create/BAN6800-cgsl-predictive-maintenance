@@ -1,0 +1,15 @@
+Metric,Value
+Training rows,60000.0
+Total columns,171.0
+Numeric features,170.0
+Target classes,2.0
+Positive cases,1000.0
+Positive class percentage,1.67
+Negative cases,59000.0
+Negative class percentage,98.33
+Columns with missing values,169.0
+Features >50% missing,8.0
+Features >80% missing,2.0
+Duplicate rows,0.0
+Constant features,0.0
+"Numeric features with max > 1,000,000",134.0
