@@ -1,0 +1,17 @@
+Ticket,Repository area,Evidence / filename,Purpose,Status
+BA-01,Root,README.md,Project structure and scope,Done
+BA-02,data/raw,aps_failure_training_set.csv; aps_failure_test_set.csv; aps_failure_description.txt; README.md,Dataset and provenance,Done
+BA-03,data/data_dictionary,Preliminary_Data_Dictionary.xlsx,171-field data dictionary,Done
+BA-04,notebooks/reports,01_data_understanding.ipynb; BA-04_data_quality_summary.csv; BA-04_missingness_profile.csv,Profiling and data quality,Done
+BA-05,notebooks/data outputs,02_data_preparation.ipynb; X_train_imputed.npy; X_test_imputed.npy; y_train.csv; y_test.csv,Preprocessing,Done
+BA-06,notebooks/reports,03_exploratory_analysis.ipynb; BA-06_feature_screening_summary.csv,EDA and screening,Done
+BA-07,notebooks/reports,04_feature_engineering.ipynb; BA-07_final_feature_mapping.csv; BA-07_high_correlation_pairs.csv,Feature engineering,Done
+BA-08,notebooks/reports/models,04_model_development_BA-08.ipynb; BA-08_baseline_results.csv; BA-08_baseline_report.md; baseline_logistic_regression.joblib,Baseline model,Done
+BA-09,notebooks/reports,05_classifier_comparison_BA-09.ipynb; BA-09_model_comparison_report.md; BA-09_model_comparison_summary.csv,Model comparison,Done
+BA-10,notebooks/reports,06_threshold_cost_sensitive_BA-10.ipynb; BA-10_cost_sensitive_report.md; BA-10_threshold_sensitivity.csv; BA-10_threshold_evaluation_comparison.csv,Cost-sensitive threshold,Done
+BA-11,reports,BA-11_Model_Card.md; BA-11_Evaluation_Report.md; BA-11_documentation_config.json,Model documentation,Done
+BA-12,notebooks/reports/dashboards,07_risk_ranking_BA-12.ipynb; BA-12_risk_ranked_observations.csv; BA-12_risk_category_summary.csv; BA-12_risk_rules.md; BA-12_risk_rules.json; BA-12_risk_score_distribution.png; BA-12_dashboard_risk_dataset.csv,Risk ranking and decision rules,Done
+BA-13,reports/dashboards,BA-13_prescriptive_decision_matrix.csv; BA-13_prescriptive_recommendations.csv; BA-13_prescriptive_summary.csv; BA-13_prescriptive_rules.md,Prescriptive layer,Done
+BA-14,dashboards/reports,BA-14_dashboard_ready_risk_dataset.csv; BA-14_top25_priority_queue.csv; BA-14_decision_matrix.csv; BA-14_risk_summary.csv; BA-14_DAX_Measures.md; BA-14_Dashboard_Build_Guide.md; BA-14_*.png screenshots,Power BI evidence and supporting data,Done
+BA-15,reports,BA-15_PRIVACY_FAIRNESS_EXPLAINABILITY.md; BA-15_privacy_controls_checklist.csv; BA-15_fairness_monitoring_plan.csv; BA-15_explainability_plan.csv; BA-15_governance_config.json,Governance,Done
+BA-16,reports/root,BA-16_Final_Project_Delivery_Report.md; BA-16_Production_Handover_and_Retrospective.md; BA-16_Technical_RAID_Log_and_Completion_Tracker.xlsx,Final consolidation and handover,In Progress
