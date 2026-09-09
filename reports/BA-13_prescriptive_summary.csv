@@ -1,0 +1,4 @@
+Risk_Category,Priority_Level,Observation_Count,Mean_Risk_Score,Max_Risk_Score,Prescriptive_Action,Human_Approval_Required
+Critical,P1,271,0.7371571106575325,0.98,Immediate technical review / inspection,Yes
+High,P2,382,0.25278608447780104,0.4967814018346448,Prioritize technical review and planned inspection,Yes
+Lower,P3,15347,0.0028457489411501747,0.0999653153550334,Continue monitoring; no automatic intervention,Yes

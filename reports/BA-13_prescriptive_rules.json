@@ -1,0 +1,52 @@
+{
+  "project": "BAN6800-cgsl-predictive-maintenance",
+  "module": "BA-13",
+  "title": "Prescriptive Business Rules",
+  "purpose": "Translate BA-12 risk scores into human-supervised maintenance and operational recommendations.",
+  "source": "BA-12 dashboard risk dataset",
+  "decision_principles": [
+    "Risk ranking is a decision-support input, not an autonomous control command.",
+    "All recommendations require human review and approval before execution.",
+    "Recommendations should be checked against current alarms, asset condition, maintenance history, operational context, and safety procedures.",
+    "Production thresholds, escalation paths, and planning windows must be recalibrated with governed CGSL data and actual business costs."
+  ],
+  "rules": [
+    {
+      "Risk_Category": "Critical",
+      "Priority_Level": "P1",
+      "Risk_Score_Rule": ">= 0.50",
+      "Prescriptive_Action": "Immediate technical review / inspection",
+      "Operational_Response": "Escalate to responsible maintenance/operations lead; validate condition and arrange immediate inspection.",
+      "Planning_Response": "Create or prioritize a maintenance work item after human validation; consider restricting non-essential use only when separately authorized.",
+      "Evidence_To_Check": "Recent alarms/alerts, operating condition indicators, maintenance history, outstanding defects, recent abnormal events.",
+      "Decision_Owner": "Maintenance/Operations responsible person",
+      "Human_Approval_Required": "Yes",
+      "Autonomous_Control": "No"
+    },
+    {
+      "Risk_Category": "High",
+      "Priority_Level": "P2",
+      "Risk_Score_Rule": "0.10 <= score < 0.50",
+      "Prescriptive_Action": "Prioritize technical review and planned inspection",
+      "Operational_Response": "Escalate for technical review and verify whether inspection or maintenance can be brought forward.",
+      "Planning_Response": "Schedule inspection or planned maintenance within the approved maintenance planning window, subject to human review.",
+      "Evidence_To_Check": "Recent trend/condition indicators, maintenance history, recurring defects, operating context.",
+      "Decision_Owner": "Maintenance/Operations responsible person",
+      "Human_Approval_Required": "Yes",
+      "Autonomous_Control": "No"
+    },
+    {
+      "Risk_Category": "Lower",
+      "Priority_Level": "P3",
+      "Risk_Score_Rule": "< 0.10",
+      "Prescriptive_Action": "Continue monitoring; no automatic intervention",
+      "Operational_Response": "Maintain routine operational monitoring and normal escalation processes.",
+      "Planning_Response": "Keep routine inspection/maintenance cadence unless other evidence indicates a change in condition.",
+      "Evidence_To_Check": "Routine condition indicators, recent maintenance history, newly reported defects or alarms.",
+      "Decision_Owner": "Maintenance/Operations responsible person",
+      "Human_Approval_Required": "Yes",
+      "Autonomous_Control": "No"
+    }
+  ],
+  "proxy_note": "UCI_TEST_##### observation identifiers are proxy IDs, not CGSL asset identifiers."
+}
