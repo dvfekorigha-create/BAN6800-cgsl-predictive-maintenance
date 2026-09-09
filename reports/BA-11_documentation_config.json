@@ -1,0 +1,14 @@
+{
+  "ticket": "BA-11",
+  "status": "documentation package",
+  "selected_model": "Random Forest",
+  "selected_threshold": 0.1,
+  "proxy_cost_false_positive": 10,
+  "proxy_cost_false_negative": 500,
+  "official_test_set_used_for_selection": false,
+  "source_documents": [
+    "BA-08_baseline_report.md",
+    "BA-09_model_comparison_report.md",
+    "BA-10_cost_sensitive_report.md"
+  ]
+}
