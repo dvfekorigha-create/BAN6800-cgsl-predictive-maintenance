@@ -1,0 +1,14 @@
+{
+  "selected_model": "Random Forest",
+  "risk_score": "Predicted probability of positive UCI class",
+  "alert_threshold": 0.1,
+  "critical_threshold": 0.5,
+  "rules": {
+    "Critical": "score >= 0.50 -> Immediate technical review / inspection",
+    "High": "0.10 <= score < 0.50 -> Prioritize technical review and planned inspection",
+    "Lower": "score < 0.10 -> Continue monitoring; no automatic intervention"
+  },
+  "proxy_observation_ids": true,
+  "human_oversight": true,
+  "autonomous_control": false
+}
