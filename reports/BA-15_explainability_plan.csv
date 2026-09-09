@@ -1,0 +1,10 @@
+Layer,Explanation Item,Audience,Implementation Approach,Limitation
+Alert-level,Risk score,Maintenance/Operations,Display Random Forest positive-class probability,Probability is model output not certainty
+Alert-level,Risk category,Maintenance/Operations,Display Critical/High/Lower band,Thresholds require production recalibration
+Alert-level,Priority level,Maintenance/Operations,Display P1/P2/P3,Priority is a business rule not model truth
+Alert-level,Recommended action,Maintenance/Operations,Show BA-13 prescriptive rule outcome,Recommendation needs human verification
+Alert-level,Evidence to verify,Technical Reviewer,Show data/inspection checks required before action,Checks depend on available production data
+Model-level,Global feature importance,Analytics/Engineering,Use tree-based importance plus suitable post-hoc explanation,Importance can be sensitive to correlated features
+Model-level,Local explanation,Technical Reviewer,Use a local explanation method where implemented,Explanation is not causal evidence
+Governance,Model/version information,Auditor/Management,Store model version and configuration with prediction record,Requires disciplined version control
+Governance,Human decision,Operations,Record reviewer decision and override/reason where applicable,Requires workflow capture

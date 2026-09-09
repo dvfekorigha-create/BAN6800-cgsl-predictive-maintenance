@@ -1,0 +1,15 @@
+{
+  "project": "AI-Enabled Predictive and Prescriptive Analytics for Marine Asset Maintenance and Operational Availability at CGSL",
+  "model": "Random Forest",
+  "current_data_status": "public UCI proxy; not CGSL production data",
+  "human_oversight": true,
+  "autonomous_control": false,
+  "privacy_review_required_before_production": true,
+  "fairness_assessment_current_proxy": "not fully supported",
+  "production_recalibration_required": true,
+  "explainability": {
+    "alert_level": ["risk_score", "risk_category", "priority_level", "recommended_action", "evidence_to_verify"],
+    "model_level": ["global_feature_importance", "local_explanation_where_feasible"]
+  },
+  "subgroup_metrics": ["recall", "false_negative_rate", "precision", "alert_rate", "risk_score_distribution", "calibration_where_feasible"]
+}

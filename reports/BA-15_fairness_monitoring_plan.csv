@@ -1,0 +1,7 @@
+Metric,Definition,Why It Matters,Current Proxy Status,Production Trigger/Review
+Recall by subgroup,TP/(TP+FN) for each legitimate operational subgroup,Checks whether failures are missed at different rates,Not assessed,Investigate material gaps and confirm operational acceptability
+False-negative rate by subgroup,FN/(TP+FN),Directly related to missed failure risk,Not assessed,Escalate sustained material disparity
+Precision by subgroup,TP/(TP+FP),Checks alert quality across groups,Not assessed,Review workload/alert quality disparity
+Alert rate by subgroup,Predicted-positive rate within subgroup,Identifies uneven operational impact,Not assessed,Review if disparity is operationally meaningful
+Risk-score distribution by subgroup,Distribution of predicted probabilities,Checks score behaviour across groups,Not assessed,Investigate unusual shifts or concentration
+Calibration by subgroup,Agreement between predicted risk and observed event rate where sample size permits,Checks whether scores have comparable meaning,Not assessed,Review recalibration need

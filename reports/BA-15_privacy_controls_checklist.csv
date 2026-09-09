@@ -1,0 +1,23 @@
+Control_ID,Domain,Control,Current_Proxy_Status,Production_Requirement,Owner
+PR-01,Privacy,Document source and lineage,Documented for UCI proxy,Document every CGSL production source,Data Owner
+PR-02,Privacy,Data classification,Proxy is public/anonymised technical data,Classify every production field,Data Governance
+PR-03,Privacy,Data minimisation,Applicable,Only collect fields with defined business purpose,Data Owner
+PR-04,Privacy,Access control,Planned,Least-privilege RBAC for production data and outputs,IT/Security
+PR-05,Privacy,Retention and disposal,Not applicable to proxy,Define retention by data layer and audit record,Data Governance
+PR-06,Privacy,Encryption and secure transfer,Not assessed for proxy,Apply approved organisational security controls,IT/Security
+PR-07,Privacy,Audit logging,Partially documented,Log access and decision records for production,IT/Security
+PR-08,Privacy,Legal/privacy review,Required before production,Formal privacy/legal approval before go-live,Management/Legal
+FA-01,Fairness,Relevant subgroup definition,Not supported by proxy,Define legitimate operational subgroups,Analytics/Operations
+FA-02,Fairness,Recall by subgroup,Not assessed,Monitor in validation and production,Analytics
+FA-03,Fairness,False-negative rate by subgroup,Not assessed,Monitor and investigate material disparities,Analytics
+FA-04,Fairness,Precision by subgroup,Not assessed,Monitor in validation and production,Analytics
+FA-05,Fairness,Alert-rate disparity,Not assessed,Monitor for operational impact,Analytics/Operations
+EX-01,Explainability,Risk score displayed,Implemented in BA-12,Retain in production dashboard,Analytics
+EX-02,Explainability,Risk category and priority,Implemented in BA-12/13,Display for each alert,Operations
+EX-03,Explainability,Recommended action,Implemented in BA-13,Display with reviewer context,Operations
+EX-04,Explainability,Model-driver explanation,Planned,Provide global/local explanation for review where feasible,Analytics
+EX-05,Explainability,No causal overclaim,Documented,Use decision-support language,Analytics/Communications
+HO-01,Human Oversight,Human approval,Implemented by design,Required for all consequential operational actions,Operations
+HO-02,Human Oversight,No autonomous control,Implemented by design,No autonomous shutdown/dispatch/action,Operations/Engineering
+AU-01,Auditability,Model/config versioning,Documented,Version every production model release,Analytics
+AU-02,Auditability,Decision audit trail,Defined,Retain prediction, recommendation, reviewer and outcome,Operations
