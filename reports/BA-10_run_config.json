@@ -1,0 +1,16 @@
+{
+  "ticket": "BA-10",
+  "selected_model": "Random Forest",
+  "random_state": 42,
+  "n_estimators": 150,
+  "class_weight": "balanced_subsample",
+  "min_samples_leaf": 2,
+  "false_positive_cost": 10,
+  "false_negative_cost": 500,
+  "fit_fraction": 0.6,
+  "threshold_tuning_fraction": 0.2,
+  "internal_evaluation_fraction": 0.2,
+  "threshold_grid": "0.01 to 0.99 by 0.01",
+  "official_test_set_used": false,
+  "selected_threshold": 0.1
+}
