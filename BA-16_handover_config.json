@@ -1,0 +1,32 @@
+{
+  "project": "AI-Enabled Predictive and Prescriptive Analytics for Marine Asset Maintenance and Operational Availability at CGSL",
+  "module": "BAN6800 Module 2",
+  "final_workstream": "BA-16",
+  "completed_workstreams": [
+    "BA-01",
+    "BA-02",
+    "BA-03",
+    "BA-04",
+    "BA-05",
+    "BA-06",
+    "BA-07",
+    "BA-08",
+    "BA-09",
+    "BA-10",
+    "BA-11",
+    "BA-12",
+    "BA-13",
+    "BA-14",
+    "BA-15"
+  ],
+  "current_status": "In Progress",
+  "selected_model": "Random Forest",
+  "selected_alert_threshold": 0.1,
+  "critical_threshold": 0.5,
+  "feature_count": 334,
+  "proxy_training_observations": 60000,
+  "proxy_test_observations": 16000,
+  "production_gate_required": true,
+  "human_oversight": true,
+  "autonomous_control": false
+}
