@@ -1,0 +1,13 @@
+{
+  "project_ticket": "BA-08",
+  "model": "LogisticRegression",
+  "class_weight": "balanced",
+  "solver": "lbfgs",
+  "max_iter": 500,
+  "random_state": 42,
+  "validation_size": 0.2,
+  "baseline_threshold": 0.5,
+  "test_set_used_for_selection": false,
+  "threshold_tuning": false,
+  "final_feature_count": 334
+}
