@@ -1,0 +1,9 @@
+services:
+  cgsl-pipeline:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./reports:/app/reports
+      - ./evidence:/app/evidence
+      - ./logs:/app/logs
+    command: python scripts/run_pipeline.py

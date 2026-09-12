@@ -1,0 +1,6 @@
+Stakeholder,Cadence,Channel,Information,Decision_or_Action
+Data Owner / Operations,Each run + weekly,Pipeline report / email,Freshness completeness source exceptions,Approve source or resolve issue
+Analytics / Data Team,Each run,GitHub + run log,Validation schema changes output status,Investigate failures and approve release
+Maintenance / Marine Management,Weekly,Dashboard / meeting,Data readiness known limitations operational relevance,Confirm operational relevance
+HSE / Compliance,Each release + critical issues immediately,Governance review,Privacy bias audit governance exceptions,Accept remediate or block release
+Senior Management,Weekly,Status update,Delivery status material risks decisions/resources,Prioritize resources and approve next stage

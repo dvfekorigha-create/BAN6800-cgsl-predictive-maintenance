@@ -1,0 +1,8 @@
+Evidence,Student_Action,Status
+Prefect flow run,Run `python scripts/run_pipeline.py` against data/raw/aps_failure_training_set.csv,Pending run
+Great Expectations validation,Capture `evidence/gx_validation_results_gxcore.json` after a successful GX run,Pending run
+Pytest,Run `pytest -q` and save terminal screenshot/output,Pending run
+Docker,Run `docker build -t cgsl-module3 .` and `docker run --rm ...`,Pending run
+Bias suite,Capture `evidence/bias_report.json`,Pending run
+Privacy audit,Capture `logs/privacy_audit.jsonl`,Pending run
+Lineage,Reference `reports/data_lineage.md` and final processed CSV,Pending run

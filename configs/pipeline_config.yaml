@@ -1,0 +1,18 @@
+project: "BAN6800 Module 3 - CGSL Predictive Maintenance"
+source:
+  training_csv: "data/raw/aps_failure_training_set.csv"
+  test_csv: "data/raw/aps_failure_test_set.csv"
+  metadata_header_rows: 20
+processing:
+  missing_marker: "na"
+  drop_column_missingness_threshold: 0.80
+  imputation_strategy: "median"
+validation:
+  min_training_rows: 5000
+  expected_training_columns: 171
+  expected_test_columns: 171
+privacy:
+  pii_columns: []
+  hash_identifier_columns: []
+bias:
+  sensitive_group_columns: []

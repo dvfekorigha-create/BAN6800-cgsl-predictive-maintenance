@@ -1,0 +1,11 @@
+{
+  "name": "cgsl_module3_data_quality_suite",
+  "purpose": "Pre-transform validation contract for UCI APS Failure at Scania Trucks input.",
+  "expectations": [
+    {"expectation_type": "ExpectTableRowCountToBeBetween", "kwargs": {"min_value": 5000}},
+    {"expectation_type": "ExpectTableColumnCountToEqual", "kwargs": {"value": 171}},
+    {"expectation_type": "ExpectColumnValuesToNotBeNull", "kwargs": {"column": "class"}},
+    {"expectation_type": "ExpectColumnValuesToBeInSet", "kwargs": {"column": "class", "value_set": ["neg", "pos"]}}
+  ],
+  "runtime_note": "The flow also executes these expectations with Great Expectations Core when dependencies are installed; deterministic checks are retained as a transparent gate."
+}
