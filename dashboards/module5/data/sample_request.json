@@ -1,0 +1,16 @@
+{
+  "project": "CGSL AI-Enabled Predictive Maintenance",
+  "organization": "Chairborne Global Services Ltd (CGSL)",
+  "model_type": "Gradient Boosting Classifier",
+  "dataset": "UCI AI4I 2020 Predictive Maintenance Dataset",
+  "number_of_features": 334,
+  "training_observations": 60000,
+  "testing_observations": 16000,
+  "accuracy": 0.9907,
+  "precision": 0.9036,
+  "recall": 0.6747,
+  "f1_score": 0.7725,
+  "roc_auc": 0.9937,
+  "default_classification_threshold": 0.50,
+  "analytical_threshold_sensitivity_peak_f1": 0.30
+}
