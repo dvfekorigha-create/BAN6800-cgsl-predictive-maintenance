@@ -2,7 +2,7 @@
   "project": "CGSL AI-Enabled Predictive Maintenance",
   "organization": "Chairborne Global Services Ltd (CGSL)",
   "model_type": "Gradient Boosting Classifier",
-  "dataset": "UCI AI4I 2020 Predictive Maintenance Dataset",
+  "dataset": "UCI APS Failure at Scania Trucks public proxy dataset",
   "number_of_features": 334,
   "training_observations": 60000,
   "testing_observations": 16000,
