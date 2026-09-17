@@ -8,3 +8,4 @@ Faker>=25,<40
 PyYAML>=6,<7
 pytest>=8,<10
 openpyxl>=3.1,<4
+joblib
