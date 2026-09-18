@@ -38,7 +38,7 @@ def load_csv(name):
 
 model = load_model()
 meta = load_json(META_PATH)
-sample = load_json(DATA / "sample_request.json")["features"]
+sample = [0.0] * int(meta["number_of_features"])
 shap_df = load_csv("shap_global_importance.csv")
 local_df = load_csv("local_shap_explanation.csv")
 cf_df = load_csv("counterfactual_explanation.csv")
